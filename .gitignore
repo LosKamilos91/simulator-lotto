@@ -1,0 +1,24 @@
+# Created by https://github.com/LosKamilos91
+
+### Visual Studio ###
+
+## Ignore Visual Studio temporary files, build results
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+#Build resolution
+[Dd]ebug/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+[Pp][Rr][Oo]perties/
+
+# Visual Studio cache/options directory
+.vs/
+
