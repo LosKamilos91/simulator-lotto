@@ -28,12 +28,96 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Lotto));
+            this.img_lotto = new System.Windows.Forms.PictureBox();
+            this.select_numbers_menu = new System.Windows.Forms.Button();
+            this.exit_menu = new System.Windows.Forms.Button();
+            this.random_menu = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.img_lotto)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // img_lotto
+            // 
+            this.img_lotto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("img_lotto.BackgroundImage")));
+            this.img_lotto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.img_lotto.InitialImage = null;
+            this.img_lotto.Location = new System.Drawing.Point(12, 12);
+            this.img_lotto.Name = "img_lotto";
+            this.img_lotto.Size = new System.Drawing.Size(360, 184);
+            this.img_lotto.TabIndex = 5;
+            this.img_lotto.TabStop = false;
+            // 
+            // select_numbers_menu
+            // 
+            this.select_numbers_menu.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.select_numbers_menu.FlatAppearance.BorderColor = System.Drawing.SystemColors.ScrollBar;
+            this.select_numbers_menu.FlatAppearance.BorderSize = 0;
+            this.select_numbers_menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.select_numbers_menu.Font = new System.Drawing.Font("Arial Nova Cond", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.select_numbers_menu.ForeColor = System.Drawing.Color.DarkGray;
+            this.select_numbers_menu.Location = new System.Drawing.Point(12, 239);
+            this.select_numbers_menu.Name = "select_numbers_menu";
+            this.select_numbers_menu.Size = new System.Drawing.Size(174, 53);
+            this.select_numbers_menu.TabIndex = 11;
+            this.select_numbers_menu.Text = "SELECT";
+            this.select_numbers_menu.UseVisualStyleBackColor = false;
+            // 
+            // exit_menu
+            // 
+            this.exit_menu.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.exit_menu.FlatAppearance.BorderColor = System.Drawing.SystemColors.ScrollBar;
+            this.exit_menu.FlatAppearance.BorderSize = 0;
+            this.exit_menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exit_menu.Font = new System.Drawing.Font("Arial Nova Cond", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.exit_menu.ForeColor = System.Drawing.Color.DarkGray;
+            this.exit_menu.Location = new System.Drawing.Point(12, 298);
+            this.exit_menu.Name = "exit_menu";
+            this.exit_menu.Size = new System.Drawing.Size(360, 62);
+            this.exit_menu.TabIndex = 10;
+            this.exit_menu.Text = "EXIT";
+            this.exit_menu.UseVisualStyleBackColor = false;
+            // 
+            // random_menu
+            // 
+            this.random_menu.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.random_menu.FlatAppearance.BorderColor = System.Drawing.SystemColors.ScrollBar;
+            this.random_menu.FlatAppearance.BorderSize = 0;
+            this.random_menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.random_menu.Font = new System.Drawing.Font("Arial Nova Cond", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.random_menu.ForeColor = System.Drawing.Color.DarkGray;
+            this.random_menu.Location = new System.Drawing.Point(198, 239);
+            this.random_menu.Name = "random_menu";
+            this.random_menu.Size = new System.Drawing.Size(174, 53);
+            this.random_menu.TabIndex = 9;
+            this.random_menu.Text = "RANDOM";
+            this.random_menu.UseVisualStyleBackColor = false;
+            // 
+            // Lotto
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.BackColor = System.Drawing.SystemColors.Window;
+            this.ClientSize = new System.Drawing.Size(384, 382);
+            this.Controls.Add(this.select_numbers_menu);
+            this.Controls.Add(this.exit_menu);
+            this.Controls.Add(this.random_menu);
+            this.Controls.Add(this.img_lotto);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximumSize = new System.Drawing.Size(400, 421);
+            this.MinimumSize = new System.Drawing.Size(400, 421);
+            this.Name = "Lotto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Lotto simulator";
+            ((System.ComponentModel.ISupportInitialize)(this.img_lotto)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private PictureBox img_lotto;
+        private Button select_numbers_menu;
+        private Button exit_menu;
+        private Button random_menu;
     }
 }
