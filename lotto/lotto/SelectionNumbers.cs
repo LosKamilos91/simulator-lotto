@@ -19,12 +19,16 @@ namespace lotto
 
         private void back_button_Click(object sender, EventArgs e)
         {
-            //to-do
+            if (MessageBox.Show("Do you want close the window?", "Close Window", MessageBoxButtons.YesNo, MessageBoxIcon.Question) ==
+               DialogResult.Yes)
+            {
+                Dispose();
+            }
         }
 
         private void start_button_Click(object sender, EventArgs e)
         {
-            //to-do
+            
         }
         #region number 1
         private void number_1_Click(object sender, EventArgs e)

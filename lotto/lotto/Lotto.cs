@@ -2,9 +2,9 @@ namespace lotto
 {
     public partial class Lotto : Form
     {
-        public bool startLottoSimulatorRandomGame = false;
-        public bool startLottoSimulatorSelectGame = false;
-        protected LottoDashboard dashboard;
+        public LottoDashboard dashboardPanel = new LottoDashboard();
+        public bool openWindowWhenClickSelectInMenu = false;
+        public bool openWindowWhenClickRandomInMenu = false;
         public Lotto()
         {
             InitializeComponent();
@@ -14,7 +14,8 @@ namespace lotto
         {
             if (StartGameMessage() == DialogResult.Yes)
             {
-                startLottoSimulatorSelectGame = true;
+                openWindowWhenClickSelectInMenu = true;
+                this.Dispose();
             }
         }
 
@@ -34,10 +35,8 @@ namespace lotto
         {
             if (StartGameMessage() == DialogResult.Yes)
             {
-                startLottoSimulatorRandomGame = true;
-                this.Visible = false;
-                dashboard = new LottoDashboard();
-                dashboard.Show();
+                openWindowWhenClickRandomInMenu = true;
+                this.Dispose();
             }
         }
         private void random_button_menu_MouseEnter(object sender, EventArgs e)
@@ -77,7 +76,7 @@ namespace lotto
             }
         }
 
-        public DialogResult CloseGameMessage()
+        protected DialogResult CloseGameMessage()
         {
             return MessageBox.Show("Do you want quit the game?", "Exit game", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
         }

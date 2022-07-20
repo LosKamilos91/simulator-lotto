@@ -12,6 +12,7 @@ namespace lotto
 {
     public partial class LottoDashboard : Form
     {
+        public SelectionNumbers select = new SelectionNumbers();
         public LottoDashboard()
         {
             InitializeComponent();
@@ -34,7 +35,15 @@ namespace lotto
 
         private void LottoDashboard_FormClosing(object sender, FormClosingEventArgs e)
         {
-            throw new NotImplementedException();
+            if (MessageBox.Show("Do you want close the window?", "Close Window", MessageBoxButtons.YesNo, MessageBoxIcon.Question) ==
+                DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+            else
+            {
+                Dispose();
+            }
         }
     }
 }

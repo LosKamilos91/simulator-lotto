@@ -115,6 +115,7 @@
             this.MaximumSize = new System.Drawing.Size(400, 421);
             this.MinimumSize = new System.Drawing.Size(400, 421);
             this.Name = "Lotto";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lotto simulator";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Lotto_FormClosing);

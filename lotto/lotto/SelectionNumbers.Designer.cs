@@ -983,7 +983,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(734, 361);
+            this.ClientSize = new System.Drawing.Size(750, 360);
             this.Controls.Add(this.back_button);
             this.Controls.Add(this.max_numbers);
             this.Controls.Add(this.number_count);
@@ -1038,9 +1038,9 @@
             this.Controls.Add(this.number_3);
             this.Controls.Add(this.number_2);
             this.Controls.Add(this.number_1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.MaximumSize = new System.Drawing.Size(750, 400);
-            this.MinimumSize = new System.Drawing.Size(750, 400);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(750, 360);
+            this.MinimumSize = new System.Drawing.Size(750, 360);
             this.Name = "SelectionNumbers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lotto simulator";
@@ -1104,6 +1104,6 @@
         private Button number_4;
         private Button number_3;
         private Button number_2;
-        private Button number_1;
+        public Button number_1;
     }
 }
