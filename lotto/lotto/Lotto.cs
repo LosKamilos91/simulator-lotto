@@ -38,17 +38,19 @@ namespace lotto
 
         private void exit_button_menu_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            this.Close();
         }
 
         private void exit_button_menu_MouseEnter(object sender, EventArgs e)
         {
-            //to-do
+            exit_button_menu.ForeColor = Color.White;
+            exit_button_menu.BackColor = Color.FromArgb(255, 192, 192);
         }
 
         private void exit_button_menu_MouseLeave(object sender, EventArgs e)
         {
-            //to-do
+            exit_button_menu.ForeColor = Color.DarkGray;
+            exit_button_menu.BackColor = SystemColors.Control;
         }
 
         private void Lotto_FormClosing(object sender, FormClosingEventArgs e)
