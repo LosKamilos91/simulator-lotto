@@ -61,6 +61,7 @@
             this.select_button_menu.TabIndex = 11;
             this.select_button_menu.Text = "SELECT";
             this.select_button_menu.UseVisualStyleBackColor = false;
+            this.select_button_menu.Click += new System.EventHandler(this.select_button_menu_Click);
             // 
             // exit_button_menu
             // 
@@ -76,6 +77,7 @@
             this.exit_button_menu.TabIndex = 10;
             this.exit_button_menu.Text = "EXIT";
             this.exit_button_menu.UseVisualStyleBackColor = false;
+            this.exit_button_menu.Click += new System.EventHandler(this.exit_button_menu_Click);
             // 
             // random_button_menu
             // 
@@ -91,6 +93,7 @@
             this.random_button_menu.TabIndex = 9;
             this.random_button_menu.Text = "RANDOM";
             this.random_button_menu.UseVisualStyleBackColor = false;
+            this.random_button_menu.Click += new System.EventHandler(this.random_button_menu_Click);
             // 
             // Lotto
             // 
