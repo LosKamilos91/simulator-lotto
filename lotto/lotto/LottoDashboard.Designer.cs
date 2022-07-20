@@ -124,6 +124,7 @@
             this.drawn_numbers_6.AutoSize = true;
             this.drawn_numbers_6.BackColor = System.Drawing.SystemColors.Control;
             this.drawn_numbers_6.Font = new System.Drawing.Font("Cambria", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.drawn_numbers_6.ForeColor = System.Drawing.Color.DarkGray;
             this.drawn_numbers_6.Location = new System.Drawing.Point(457, 77);
             this.drawn_numbers_6.Name = "drawn_numbers_6";
             this.drawn_numbers_6.Padding = new System.Windows.Forms.Padding(15, 10, 15, 10);
@@ -137,6 +138,7 @@
             this.drawn_numbers_5.AutoSize = true;
             this.drawn_numbers_5.BackColor = System.Drawing.SystemColors.Control;
             this.drawn_numbers_5.Font = new System.Drawing.Font("Cambria", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.drawn_numbers_5.ForeColor = System.Drawing.Color.DarkGray;
             this.drawn_numbers_5.Location = new System.Drawing.Point(377, 77);
             this.drawn_numbers_5.Name = "drawn_numbers_5";
             this.drawn_numbers_5.Padding = new System.Windows.Forms.Padding(15, 10, 15, 10);
@@ -150,6 +152,7 @@
             this.drawn_numbers_4.AutoSize = true;
             this.drawn_numbers_4.BackColor = System.Drawing.SystemColors.Control;
             this.drawn_numbers_4.Font = new System.Drawing.Font("Cambria", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.drawn_numbers_4.ForeColor = System.Drawing.Color.DarkGray;
             this.drawn_numbers_4.Location = new System.Drawing.Point(297, 77);
             this.drawn_numbers_4.Name = "drawn_numbers_4";
             this.drawn_numbers_4.Padding = new System.Windows.Forms.Padding(15, 10, 15, 10);
@@ -163,6 +166,7 @@
             this.drawn_numbers_3.AutoSize = true;
             this.drawn_numbers_3.BackColor = System.Drawing.SystemColors.Control;
             this.drawn_numbers_3.Font = new System.Drawing.Font("Cambria", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.drawn_numbers_3.ForeColor = System.Drawing.Color.DarkGray;
             this.drawn_numbers_3.Location = new System.Drawing.Point(217, 77);
             this.drawn_numbers_3.Name = "drawn_numbers_3";
             this.drawn_numbers_3.Padding = new System.Windows.Forms.Padding(15, 10, 15, 10);
@@ -176,6 +180,7 @@
             this.drawn_numbers_2.AutoSize = true;
             this.drawn_numbers_2.BackColor = System.Drawing.SystemColors.Control;
             this.drawn_numbers_2.Font = new System.Drawing.Font("Cambria", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.drawn_numbers_2.ForeColor = System.Drawing.Color.DarkGray;
             this.drawn_numbers_2.Location = new System.Drawing.Point(137, 77);
             this.drawn_numbers_2.Name = "drawn_numbers_2";
             this.drawn_numbers_2.Padding = new System.Windows.Forms.Padding(15, 10, 15, 10);
@@ -189,6 +194,7 @@
             this.drawn_numbers_1.AutoSize = true;
             this.drawn_numbers_1.BackColor = System.Drawing.SystemColors.Control;
             this.drawn_numbers_1.Font = new System.Drawing.Font("Cambria", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.drawn_numbers_1.ForeColor = System.Drawing.Color.DarkGray;
             this.drawn_numbers_1.Location = new System.Drawing.Point(57, 77);
             this.drawn_numbers_1.Name = "drawn_numbers_1";
             this.drawn_numbers_1.Padding = new System.Windows.Forms.Padding(15, 10, 15, 10);
@@ -201,6 +207,7 @@
             // 
             this.drawn_numbers_text.AutoSize = true;
             this.drawn_numbers_text.Font = new System.Drawing.Font("Arial Nova Cond", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.drawn_numbers_text.ForeColor = System.Drawing.Color.DarkGray;
             this.drawn_numbers_text.Location = new System.Drawing.Point(244, 61);
             this.drawn_numbers_text.Name = "drawn_numbers_text";
             this.drawn_numbers_text.Size = new System.Drawing.Size(105, 16);
@@ -210,19 +217,22 @@
             // your_numbers_text
             // 
             this.your_numbers_text.AutoSize = true;
-            this.your_numbers_text.Font = new System.Drawing.Font("Arial Nova Cond", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.your_numbers_text.Location = new System.Drawing.Point(449, 183);
+            this.your_numbers_text.BackColor = System.Drawing.Color.White;
+            this.your_numbers_text.Font = new System.Drawing.Font("Arial Nova Cond", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.your_numbers_text.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.your_numbers_text.Location = new System.Drawing.Point(448, 174);
             this.your_numbers_text.Name = "your_numbers_text";
-            this.your_numbers_text.Size = new System.Drawing.Size(82, 14);
+            this.your_numbers_text.Size = new System.Drawing.Size(84, 14);
             this.your_numbers_text.TabIndex = 38;
             this.your_numbers_text.Text = "YOUR NAMBERS";
             // 
             // number_6
             // 
             this.number_6.AutoSize = true;
-            this.number_6.BackColor = System.Drawing.Color.LightBlue;
+            this.number_6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.number_6.Font = new System.Drawing.Font("Arial Nova Cond", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.number_6.Location = new System.Drawing.Point(488, 157);
+            this.number_6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.number_6.Location = new System.Drawing.Point(489, 148);
             this.number_6.Name = "number_6";
             this.number_6.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.number_6.Size = new System.Drawing.Size(43, 26);
@@ -233,9 +243,10 @@
             // number_5
             // 
             this.number_5.AutoSize = true;
-            this.number_5.BackColor = System.Drawing.Color.LightBlue;
+            this.number_5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.number_5.Font = new System.Drawing.Font("Arial Nova Cond", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.number_5.Location = new System.Drawing.Point(448, 157);
+            this.number_5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.number_5.Location = new System.Drawing.Point(449, 148);
             this.number_5.Name = "number_5";
             this.number_5.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.number_5.Size = new System.Drawing.Size(43, 26);
@@ -246,9 +257,10 @@
             // number_4
             // 
             this.number_4.AutoSize = true;
-            this.number_4.BackColor = System.Drawing.Color.LightBlue;
+            this.number_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.number_4.Font = new System.Drawing.Font("Arial Nova Cond", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.number_4.Location = new System.Drawing.Point(408, 157);
+            this.number_4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.number_4.Location = new System.Drawing.Point(409, 148);
             this.number_4.Name = "number_4";
             this.number_4.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.number_4.Size = new System.Drawing.Size(43, 26);
@@ -259,9 +271,10 @@
             // number_3
             // 
             this.number_3.AutoSize = true;
-            this.number_3.BackColor = System.Drawing.Color.LightBlue;
+            this.number_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.number_3.Font = new System.Drawing.Font("Arial Nova Cond", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.number_3.Location = new System.Drawing.Point(367, 157);
+            this.number_3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.number_3.Location = new System.Drawing.Point(368, 148);
             this.number_3.Name = "number_3";
             this.number_3.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.number_3.Size = new System.Drawing.Size(43, 26);
@@ -272,9 +285,10 @@
             // number_2
             // 
             this.number_2.AutoSize = true;
-            this.number_2.BackColor = System.Drawing.Color.LightBlue;
+            this.number_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.number_2.Font = new System.Drawing.Font("Arial Nova Cond", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.number_2.Location = new System.Drawing.Point(327, 157);
+            this.number_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.number_2.Location = new System.Drawing.Point(328, 148);
             this.number_2.Name = "number_2";
             this.number_2.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.number_2.Size = new System.Drawing.Size(43, 26);
@@ -285,9 +299,10 @@
             // number_1
             // 
             this.number_1.AutoSize = true;
-            this.number_1.BackColor = System.Drawing.Color.LightBlue;
+            this.number_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.number_1.Font = new System.Drawing.Font("Arial Nova Cond", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.number_1.Location = new System.Drawing.Point(287, 157);
+            this.number_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.number_1.Location = new System.Drawing.Point(288, 148);
             this.number_1.Name = "number_1";
             this.number_1.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.number_1.Size = new System.Drawing.Size(43, 26);
@@ -395,7 +410,7 @@
             this.MaximumSize = new System.Drawing.Size(600, 350);
             this.MinimumSize = new System.Drawing.Size(600, 350);
             this.Name = "LottoDashboard";
-            this.Text = "LottoDashboard";
+            this.Text = "Lotto simulator";
             this.ResumeLayout(false);
             this.PerformLayout();
 

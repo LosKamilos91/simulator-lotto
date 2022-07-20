@@ -49,8 +49,8 @@
             // 
             // select_button_menu
             // 
-            this.select_button_menu.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.select_button_menu.FlatAppearance.BorderColor = System.Drawing.SystemColors.ScrollBar;
+            this.select_button_menu.BackColor = System.Drawing.SystemColors.Control;
+            this.select_button_menu.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
             this.select_button_menu.FlatAppearance.BorderSize = 0;
             this.select_button_menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.select_button_menu.Font = new System.Drawing.Font("Arial Nova Cond", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -64,8 +64,8 @@
             // 
             // exit_button_menu
             // 
-            this.exit_button_menu.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.exit_button_menu.FlatAppearance.BorderColor = System.Drawing.SystemColors.ScrollBar;
+            this.exit_button_menu.BackColor = System.Drawing.SystemColors.Control;
+            this.exit_button_menu.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
             this.exit_button_menu.FlatAppearance.BorderSize = 0;
             this.exit_button_menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exit_button_menu.Font = new System.Drawing.Font("Arial Nova Cond", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -79,8 +79,8 @@
             // 
             // random_button_menu
             // 
-            this.random_button_menu.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.random_button_menu.FlatAppearance.BorderColor = System.Drawing.SystemColors.ScrollBar;
+            this.random_button_menu.BackColor = System.Drawing.SystemColors.Control;
+            this.random_button_menu.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
             this.random_button_menu.FlatAppearance.BorderSize = 0;
             this.random_button_menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.random_button_menu.Font = new System.Drawing.Font("Arial Nova Cond", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
