@@ -324,6 +324,7 @@
             this.again_button.Text = "Try Again";
             this.again_button.UseVisualStyleBackColor = false;
             this.again_button.Visible = false;
+            this.again_button.Click += new System.EventHandler(this.again_button_Click);
             // 
             // start_game_button
             // 
@@ -338,6 +339,7 @@
             this.start_game_button.TabIndex = 47;
             this.start_game_button.Text = "Start Game";
             this.start_game_button.UseVisualStyleBackColor = false;
+            this.start_game_button.Click += new System.EventHandler(this.start_game_button_Click);
             // 
             // quit_game_button
             // 
@@ -353,6 +355,7 @@
             this.quit_game_button.Text = "Quit Game";
             this.quit_game_button.UseVisualStyleBackColor = false;
             this.quit_game_button.Visible = false;
+            this.quit_game_button.Click += new System.EventHandler(this.quit_game_button_Click);
             // 
             // total_drawns
             // 
@@ -410,7 +413,9 @@
             this.MaximumSize = new System.Drawing.Size(600, 350);
             this.MinimumSize = new System.Drawing.Size(600, 350);
             this.Name = "LottoDashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lotto simulator";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LottoDashboard_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

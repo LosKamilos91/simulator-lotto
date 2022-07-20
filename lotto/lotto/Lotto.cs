@@ -4,6 +4,7 @@ namespace lotto
     {
         public bool startLottoSimulatorRandomGame = false;
         public bool startLottoSimulatorSelectGame = false;
+        protected LottoDashboard dashboard;
         public Lotto()
         {
             InitializeComponent();
@@ -34,6 +35,9 @@ namespace lotto
             if (StartGameMessage() == DialogResult.Yes)
             {
                 startLottoSimulatorRandomGame = true;
+                this.Visible = false;
+                dashboard = new LottoDashboard();
+                dashboard.Show();
             }
         }
         private void random_button_menu_MouseEnter(object sender, EventArgs e)
@@ -67,11 +71,17 @@ namespace lotto
 
         private void Lotto_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("Do you want quit the game?", "Exit game", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            if (CloseGameMessage() == DialogResult.No)
             {
                 e.Cancel = true;
             }
         }
+
+        public DialogResult CloseGameMessage()
+        {
+            return MessageBox.Show("Do you want quit the game?", "Exit game", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+        }
+
         protected DialogResult StartGameMessage()
         {
             return MessageBox.Show("Do you want start game?", "Start Game", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
