@@ -2,6 +2,8 @@ namespace lotto
 {
     public partial class Lotto : Form
     {
+        public bool startLottoSimulatorRandomGame = false;
+        public bool startLottoSimulatorSelectGame = false;
         public Lotto()
         {
             InitializeComponent();
@@ -9,31 +11,41 @@ namespace lotto
 
         private void select_button_menu_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            if (StartGameMessage() == DialogResult.Yes)
+            {
+                startLottoSimulatorSelectGame = true;
+            }
         }
 
         private void select_button_menu_MouseEnter(object sender, EventArgs e)
         {
-            //to-do
+            select_button_menu.ForeColor = Color.White;
+            select_button_menu.BackColor = Color.CadetBlue;
         }
 
         private void select_button_menu_MouseLeave(object sender, EventArgs e)
         {
-            //to-do
-        }
-        private void random_button_menu_MouseEnter(object sender, EventArgs e)
-        {
-            //to-do
-        }
-
-        private void random_button_menu_MouseLeave(object sender, EventArgs e)
-        {
-            //to-do
+            select_button_menu.ForeColor = Color.DarkGray;
+            select_button_menu.BackColor = SystemColors.Control;
         }
 
         private void random_button_menu_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            if (StartGameMessage() == DialogResult.Yes)
+            {
+                startLottoSimulatorRandomGame = true;
+            }
+        }
+        private void random_button_menu_MouseEnter(object sender, EventArgs e)
+        {
+            random_button_menu.ForeColor = Color.White;
+            random_button_menu.BackColor = Color.CadetBlue;
+        }
+
+        private void random_button_menu_MouseLeave(object sender, EventArgs e)
+        {
+            random_button_menu.ForeColor = Color.DarkGray;
+            random_button_menu.BackColor = SystemColors.Control;
         }
 
         private void exit_button_menu_Click(object sender, EventArgs e)
@@ -59,6 +71,10 @@ namespace lotto
             {
                 e.Cancel = true;
             }
+        }
+        protected DialogResult StartGameMessage()
+        {
+            return MessageBox.Show("Do you want start game?", "Start Game", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
         }
     }
 }
