@@ -62,6 +62,8 @@
             this.select_button_menu.Text = "SELECT";
             this.select_button_menu.UseVisualStyleBackColor = false;
             this.select_button_menu.Click += new System.EventHandler(this.select_button_menu_Click);
+            this.select_button_menu.MouseEnter += new System.EventHandler(this.select_button_menu_MouseEnter);
+            this.select_button_menu.MouseLeave += new System.EventHandler(this.select_button_menu_MouseLeave);
             // 
             // exit_button_menu
             // 
@@ -78,6 +80,8 @@
             this.exit_button_menu.Text = "EXIT";
             this.exit_button_menu.UseVisualStyleBackColor = false;
             this.exit_button_menu.Click += new System.EventHandler(this.exit_button_menu_Click);
+            this.exit_button_menu.MouseEnter += new System.EventHandler(this.exit_button_menu_MouseEnter);
+            this.exit_button_menu.MouseLeave += new System.EventHandler(this.exit_button_menu_MouseLeave);
             // 
             // random_button_menu
             // 
@@ -94,6 +98,8 @@
             this.random_button_menu.Text = "RANDOM";
             this.random_button_menu.UseVisualStyleBackColor = false;
             this.random_button_menu.Click += new System.EventHandler(this.random_button_menu_Click);
+            this.random_button_menu.MouseEnter += new System.EventHandler(this.random_button_menu_MouseEnter);
+            this.random_button_menu.MouseLeave += new System.EventHandler(this.random_button_menu_MouseLeave);
             // 
             // Lotto
             // 
@@ -111,6 +117,7 @@
             this.Name = "Lotto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lotto simulator";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Lotto_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.img_lotto)).EndInit();
             this.ResumeLayout(false);
 
