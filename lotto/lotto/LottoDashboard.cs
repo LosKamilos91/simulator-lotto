@@ -18,6 +18,7 @@ namespace lotto
 
         private decimal totalCash = 50;
         private int totalDrawns = 0;
+        private const int betCash = 3;
         private const long minimumJackpot = 1000000;
         private const long maximumJackpot = 37500000;
         private decimal jackpot;
@@ -88,7 +89,7 @@ namespace lotto
             GenerateDrawnNumbers();
             totalDrawns += 1;
             total_drawns.Text = totalDrawns.ToString();
-            totalCash -= 3;
+            totalCash -= betCash;
             total_cash.Text = totalCash.ToString("C2");
         }
 
