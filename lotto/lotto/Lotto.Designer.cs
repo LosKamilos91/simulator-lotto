@@ -112,6 +112,7 @@
             this.Controls.Add(this.random_button_menu);
             this.Controls.Add(this.img_lotto);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(400, 421);
             this.MinimumSize = new System.Drawing.Size(400, 421);
             this.Name = "Lotto";

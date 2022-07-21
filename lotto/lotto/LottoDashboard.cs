@@ -19,6 +19,7 @@ namespace lotto
         private decimal totalCash = 50;
         private int totalDrawns = 0;
         private const int betCash = 3;
+        private int hitTheNumbers = 0;
         private const long minimumJackpot = 1000000;
         private const long maximumJackpot = 37500000;
         private decimal jackpot;
@@ -91,6 +92,43 @@ namespace lotto
             total_drawns.Text = totalDrawns.ToString();
             totalCash -= betCash;
             total_cash.Text = totalCash.ToString("C2");
+            VeryficationWins();
+        }
+
+        private void VeryficationWins()
+        {
+            if (select.startGameSelectionNumbers)
+            {
+                for (int i = 0; i < generateDrawnNumbersToList.Count; i++)
+                {
+                    int number = select.numbersSelected[i];
+                    if (generateDrawnNumbersToList.Contains(number))
+                    {
+                        hitTheNumbers += 1;
+                    }
+                }
+            }
+            else
+            {
+                for (int i = 0; i < generateDrawnNumbersToList.Count; i++)
+                {
+                    int number = generateRandomNumbersToList[i];
+                    if (generateDrawnNumbersToList.Contains(number))
+                    {
+                        hitTheNumbers += 1;
+                    }
+                }
+            }
+            if (hitTheNumbers < 3)
+            {
+                MessageBox.Show("Sorry not this time. You haven't hit enough numbers.", "Winner Information", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show($"Hit numbers: {hitTheNumbers} numbers, your winners is ...", "Winner",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void LottoDashboard_Shown(object sender, EventArgs e)

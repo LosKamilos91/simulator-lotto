@@ -14,6 +14,7 @@ namespace lotto
         private int countNumber = 0;
         private int maximumNumberCount = 6;
         public bool startGameSelectionNumbers = false;
+        public bool backToMenu = false;
         public List<int> numbersSelected = new List<int>();
         public SelectionNumbers()
         {
@@ -40,6 +41,7 @@ namespace lotto
         {
             if (CloseWindowMessage() == DialogResult.Yes)
             {
+                backToMenu = true;
                 Dispose();
             }
         }

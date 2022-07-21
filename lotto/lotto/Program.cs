@@ -19,7 +19,10 @@ namespace lotto
                 {
                     Application.Run(menuLotto.dashboardPanel.select);
                     closeSimulator = true;
-                    Application.Run(menuLotto.dashboardPanel);
+                    if (menuLotto.dashboardPanel.select.backToMenu == false)
+                    {
+                        Application.Run(menuLotto.dashboardPanel);
+                    }
                 }
                 else if (menuLotto.openWindowWhenClickRandomInMenu)
                 {

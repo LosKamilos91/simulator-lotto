@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LottoDashboard));
             this.total_cash = new System.Windows.Forms.Label();
             this.total_cash_text = new System.Windows.Forms.Label();
             this.total_wins_count = new System.Windows.Forms.Label();
@@ -445,6 +446,7 @@
             this.Controls.Add(this.total_wins_count);
             this.Controls.Add(this.total_wins_text);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(600, 350);
             this.MinimumSize = new System.Drawing.Size(600, 350);
             this.Name = "LottoDashboard";

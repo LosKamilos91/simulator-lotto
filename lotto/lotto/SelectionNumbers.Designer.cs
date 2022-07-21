@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SelectionNumbers));
             this.back_button = new System.Windows.Forms.Button();
             this.max_numbers = new System.Windows.Forms.Label();
             this.number_count = new System.Windows.Forms.Label();
@@ -941,6 +942,7 @@
             this.Controls.Add(this.number_2);
             this.Controls.Add(this.number_1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(750, 360);
             this.MinimumSize = new System.Drawing.Size(750, 360);
             this.Name = "SelectionNumbers";
