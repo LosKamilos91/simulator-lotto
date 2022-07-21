@@ -19,6 +19,7 @@ namespace lotto
                 {
                     Application.Run(menuLotto.dashboardPanel.select);
                     closeSimulator = true;
+                    Application.Run(menuLotto.dashboardPanel);
                 }
                 else if (menuLotto.openWindowWhenClickRandomInMenu)
                 {

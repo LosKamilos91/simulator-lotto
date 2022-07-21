@@ -159,8 +159,6 @@
             this.number_49.Text = "49";
             this.number_49.UseVisualStyleBackColor = false;
             this.number_49.Click += new System.EventHandler(this.number_49_Click);
-            this.number_49.MouseEnter += new System.EventHandler(this.number_49_MouseEnter);
-            this.number_49.MouseLeave += new System.EventHandler(this.number_49_MouseLeave);
             // 
             // number_48
             // 
@@ -176,8 +174,6 @@
             this.number_48.Text = "48";
             this.number_48.UseVisualStyleBackColor = false;
             this.number_48.Click += new System.EventHandler(this.number_48_Click);
-            this.number_48.MouseEnter += new System.EventHandler(this.number_48_MouseEnter);
-            this.number_48.MouseLeave += new System.EventHandler(this.number_48_MouseLeave);
             // 
             // number_47
             // 
@@ -193,8 +189,6 @@
             this.number_47.Text = "47";
             this.number_47.UseVisualStyleBackColor = false;
             this.number_47.Click += new System.EventHandler(this.number_47_Click);
-            this.number_47.MouseEnter += new System.EventHandler(this.number_47_MouseEnter);
-            this.number_47.MouseLeave += new System.EventHandler(this.number_47_MouseLeave);
             // 
             // number_46
             // 
@@ -210,8 +204,6 @@
             this.number_46.Text = "46";
             this.number_46.UseVisualStyleBackColor = false;
             this.number_46.Click += new System.EventHandler(this.number_46_Click);
-            this.number_46.MouseEnter += new System.EventHandler(this.number_46_MouseEnter);
-            this.number_46.MouseLeave += new System.EventHandler(this.number_46_MouseLeave);
             // 
             // number_45
             // 
@@ -227,8 +219,6 @@
             this.number_45.Text = "45";
             this.number_45.UseVisualStyleBackColor = false;
             this.number_45.Click += new System.EventHandler(this.number_45_Click);
-            this.number_45.MouseEnter += new System.EventHandler(this.number_45_MouseEnter);
-            this.number_45.MouseLeave += new System.EventHandler(this.number_45_MouseLeave);
             // 
             // number_44
             // 
@@ -244,8 +234,6 @@
             this.number_44.Text = "44";
             this.number_44.UseVisualStyleBackColor = false;
             this.number_44.Click += new System.EventHandler(this.number_44_Click);
-            this.number_44.MouseEnter += new System.EventHandler(this.number_44_MouseEnter);
-            this.number_44.MouseLeave += new System.EventHandler(this.number_44_MouseLeave);
             // 
             // number_43
             // 
@@ -261,8 +249,6 @@
             this.number_43.Text = "43";
             this.number_43.UseVisualStyleBackColor = false;
             this.number_43.Click += new System.EventHandler(this.number_43_Click);
-            this.number_43.MouseEnter += new System.EventHandler(this.number_43_MouseEnter);
-            this.number_43.MouseLeave += new System.EventHandler(this.number_43_MouseLeave);
             // 
             // number_42
             // 
@@ -278,8 +264,6 @@
             this.number_42.Text = "42";
             this.number_42.UseVisualStyleBackColor = false;
             this.number_42.Click += new System.EventHandler(this.number_42_Click);
-            this.number_42.MouseEnter += new System.EventHandler(this.number_42_MouseEnter);
-            this.number_42.MouseLeave += new System.EventHandler(this.number_42_MouseLeave);
             // 
             // number_41
             // 
@@ -295,8 +279,6 @@
             this.number_41.Text = "41";
             this.number_41.UseVisualStyleBackColor = false;
             this.number_41.Click += new System.EventHandler(this.number_41_Click);
-            this.number_41.MouseEnter += new System.EventHandler(this.number_41_MouseEnter);
-            this.number_41.MouseLeave += new System.EventHandler(this.number_41_MouseLeave);
             // 
             // number_40
             // 
@@ -312,8 +294,6 @@
             this.number_40.Text = "40";
             this.number_40.UseVisualStyleBackColor = false;
             this.number_40.Click += new System.EventHandler(this.number_40_Click);
-            this.number_40.MouseEnter += new System.EventHandler(this.number_40_MouseEnter);
-            this.number_40.MouseLeave += new System.EventHandler(this.number_40_MouseLeave);
             // 
             // number_39
             // 
@@ -329,8 +309,6 @@
             this.number_39.Text = "39";
             this.number_39.UseVisualStyleBackColor = false;
             this.number_39.Click += new System.EventHandler(this.number_39_Click);
-            this.number_39.MouseEnter += new System.EventHandler(this.number_39_MouseEnter);
-            this.number_39.MouseLeave += new System.EventHandler(this.number_39_MouseLeave);
             // 
             // number_38
             // 
@@ -346,8 +324,6 @@
             this.number_38.Text = "38";
             this.number_38.UseVisualStyleBackColor = false;
             this.number_38.Click += new System.EventHandler(this.number_38_Click);
-            this.number_38.MouseEnter += new System.EventHandler(this.number_38_MouseEnter);
-            this.number_38.MouseLeave += new System.EventHandler(this.number_38_MouseLeave);
             // 
             // number_37
             // 
@@ -363,8 +339,6 @@
             this.number_37.Text = "37";
             this.number_37.UseVisualStyleBackColor = false;
             this.number_37.Click += new System.EventHandler(this.number_37_Click);
-            this.number_37.MouseEnter += new System.EventHandler(this.number_37_MouseEnter);
-            this.number_37.MouseLeave += new System.EventHandler(this.number_37_MouseLeave);
             // 
             // number_36
             // 
@@ -380,8 +354,6 @@
             this.number_36.Text = "36";
             this.number_36.UseVisualStyleBackColor = false;
             this.number_36.Click += new System.EventHandler(this.number_36_Click);
-            this.number_36.MouseEnter += new System.EventHandler(this.number_36_MouseEnter);
-            this.number_36.MouseLeave += new System.EventHandler(this.number_36_MouseLeave);
             // 
             // number_35
             // 
@@ -397,8 +369,6 @@
             this.number_35.Text = "35";
             this.number_35.UseVisualStyleBackColor = false;
             this.number_35.Click += new System.EventHandler(this.number_35_Click);
-            this.number_35.MouseEnter += new System.EventHandler(this.number_35_MouseEnter);
-            this.number_35.MouseLeave += new System.EventHandler(this.number_35_MouseLeave);
             // 
             // number_34
             // 
@@ -414,8 +384,6 @@
             this.number_34.Text = "34";
             this.number_34.UseVisualStyleBackColor = false;
             this.number_34.Click += new System.EventHandler(this.number_34_Click);
-            this.number_34.MouseEnter += new System.EventHandler(this.number_34_MouseEnter);
-            this.number_34.MouseLeave += new System.EventHandler(this.number_34_MouseLeave);
             // 
             // number_33
             // 
@@ -431,8 +399,6 @@
             this.number_33.Text = "33";
             this.number_33.UseVisualStyleBackColor = false;
             this.number_33.Click += new System.EventHandler(this.number_33_Click);
-            this.number_33.MouseEnter += new System.EventHandler(this.number_33_MouseEnter);
-            this.number_33.MouseLeave += new System.EventHandler(this.number_33_MouseLeave);
             // 
             // number_32
             // 
@@ -448,8 +414,6 @@
             this.number_32.Text = "32";
             this.number_32.UseVisualStyleBackColor = false;
             this.number_32.Click += new System.EventHandler(this.number_32_Click);
-            this.number_32.MouseEnter += new System.EventHandler(this.number_32_MouseEnter);
-            this.number_32.MouseLeave += new System.EventHandler(this.number_32_MouseLeave);
             // 
             // number_31
             // 
@@ -465,8 +429,6 @@
             this.number_31.Text = "31";
             this.number_31.UseVisualStyleBackColor = false;
             this.number_31.Click += new System.EventHandler(this.number_31_Click);
-            this.number_31.MouseEnter += new System.EventHandler(this.number_31_MouseEnter);
-            this.number_31.MouseLeave += new System.EventHandler(this.number_31_MouseLeave);
             // 
             // number_30
             // 
@@ -482,8 +444,6 @@
             this.number_30.Text = "30";
             this.number_30.UseVisualStyleBackColor = false;
             this.number_30.Click += new System.EventHandler(this.number_30_Click);
-            this.number_30.MouseEnter += new System.EventHandler(this.number_30_MouseEnter);
-            this.number_30.MouseLeave += new System.EventHandler(this.number_30_MouseLeave);
             // 
             // number_29
             // 
@@ -499,8 +459,6 @@
             this.number_29.Text = "29";
             this.number_29.UseVisualStyleBackColor = false;
             this.number_29.Click += new System.EventHandler(this.number_29_Click);
-            this.number_29.MouseEnter += new System.EventHandler(this.number_29_MouseEnter);
-            this.number_29.MouseLeave += new System.EventHandler(this.number_29_MouseLeave);
             // 
             // number_28
             // 
@@ -516,8 +474,6 @@
             this.number_28.Text = "28";
             this.number_28.UseVisualStyleBackColor = false;
             this.number_28.Click += new System.EventHandler(this.number_28_Click);
-            this.number_28.MouseEnter += new System.EventHandler(this.number_28_MouseEnter);
-            this.number_28.MouseLeave += new System.EventHandler(this.number_28_MouseLeave);
             // 
             // number_27
             // 
@@ -533,8 +489,6 @@
             this.number_27.Text = "27";
             this.number_27.UseVisualStyleBackColor = false;
             this.number_27.Click += new System.EventHandler(this.number_27_Click);
-            this.number_27.MouseEnter += new System.EventHandler(this.number_27_MouseEnter);
-            this.number_27.MouseLeave += new System.EventHandler(this.number_27_MouseLeave);
             // 
             // number_26
             // 
@@ -550,8 +504,6 @@
             this.number_26.Text = "26";
             this.number_26.UseVisualStyleBackColor = false;
             this.number_26.Click += new System.EventHandler(this.number_26_Click);
-            this.number_26.MouseEnter += new System.EventHandler(this.number_26_MouseEnter);
-            this.number_26.MouseLeave += new System.EventHandler(this.number_26_MouseLeave);
             // 
             // number_25
             // 
@@ -567,8 +519,6 @@
             this.number_25.Text = "25";
             this.number_25.UseVisualStyleBackColor = false;
             this.number_25.Click += new System.EventHandler(this.number_25_Click);
-            this.number_25.MouseEnter += new System.EventHandler(this.number_25_MouseEnter);
-            this.number_25.MouseLeave += new System.EventHandler(this.number_25_MouseLeave);
             // 
             // number_24
             // 
@@ -584,8 +534,6 @@
             this.number_24.Text = "24";
             this.number_24.UseVisualStyleBackColor = false;
             this.number_24.Click += new System.EventHandler(this.number_24_Click);
-            this.number_24.MouseEnter += new System.EventHandler(this.number_24_MouseEnter);
-            this.number_24.MouseLeave += new System.EventHandler(this.number_24_MouseLeave);
             // 
             // number_23
             // 
@@ -601,8 +549,6 @@
             this.number_23.Text = "23";
             this.number_23.UseVisualStyleBackColor = false;
             this.number_23.Click += new System.EventHandler(this.number_23_Click);
-            this.number_23.MouseEnter += new System.EventHandler(this.number_23_MouseEnter);
-            this.number_23.MouseLeave += new System.EventHandler(this.number_23_MouseLeave);
             // 
             // number_22
             // 
@@ -618,8 +564,6 @@
             this.number_22.Text = "22";
             this.number_22.UseVisualStyleBackColor = false;
             this.number_22.Click += new System.EventHandler(this.number_22_Click);
-            this.number_22.MouseEnter += new System.EventHandler(this.number_22_MouseEnter);
-            this.number_22.MouseLeave += new System.EventHandler(this.number_22_MouseLeave);
             // 
             // number_21
             // 
@@ -635,8 +579,6 @@
             this.number_21.Text = "21";
             this.number_21.UseVisualStyleBackColor = false;
             this.number_21.Click += new System.EventHandler(this.number_21_Click);
-            this.number_21.MouseEnter += new System.EventHandler(this.number_21_MouseEnter);
-            this.number_21.MouseLeave += new System.EventHandler(this.number_21_MouseLeave);
             // 
             // number_20
             // 
@@ -652,8 +594,6 @@
             this.number_20.Text = "20";
             this.number_20.UseVisualStyleBackColor = false;
             this.number_20.Click += new System.EventHandler(this.number_20_Click);
-            this.number_20.MouseEnter += new System.EventHandler(this.number_20_MouseEnter);
-            this.number_20.MouseLeave += new System.EventHandler(this.number_20_MouseLeave);
             // 
             // number_19
             // 
@@ -669,8 +609,6 @@
             this.number_19.Text = "19";
             this.number_19.UseVisualStyleBackColor = false;
             this.number_19.Click += new System.EventHandler(this.number_19_Click);
-            this.number_19.MouseEnter += new System.EventHandler(this.number_19_MouseEnter);
-            this.number_19.MouseLeave += new System.EventHandler(this.number_19_MouseLeave);
             // 
             // number_18
             // 
@@ -686,8 +624,6 @@
             this.number_18.Text = "18";
             this.number_18.UseVisualStyleBackColor = false;
             this.number_18.Click += new System.EventHandler(this.number_18_Click);
-            this.number_18.MouseEnter += new System.EventHandler(this.number_18_MouseEnter);
-            this.number_18.MouseLeave += new System.EventHandler(this.number_18_MouseLeave);
             // 
             // number_17
             // 
@@ -703,8 +639,6 @@
             this.number_17.Text = "17";
             this.number_17.UseVisualStyleBackColor = false;
             this.number_17.Click += new System.EventHandler(this.number_17_Click);
-            this.number_17.MouseEnter += new System.EventHandler(this.number_17_MouseEnter);
-            this.number_17.MouseLeave += new System.EventHandler(this.number_17_MouseLeave);
             // 
             // number_16
             // 
@@ -720,8 +654,6 @@
             this.number_16.Text = "16";
             this.number_16.UseVisualStyleBackColor = false;
             this.number_16.Click += new System.EventHandler(this.number_16_Click);
-            this.number_16.MouseEnter += new System.EventHandler(this.number_16_MouseEnter);
-            this.number_16.MouseLeave += new System.EventHandler(this.number_16_MouseLeave);
             // 
             // number_15
             // 

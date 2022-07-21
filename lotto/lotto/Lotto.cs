@@ -76,12 +76,12 @@ namespace lotto
             }
         }
 
-        protected DialogResult CloseGameMessage()
+        private DialogResult CloseGameMessage()
         {
             return MessageBox.Show("Do you want quit the game?", "Exit game", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
         }
 
-        protected DialogResult StartGameMessage()
+        private DialogResult StartGameMessage()
         {
             return MessageBox.Show("Do you want start game?", "Start Game", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
         }
