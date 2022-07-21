@@ -93,6 +93,9 @@ namespace lotto
             totalCash -= betCash;
             total_cash.Text = totalCash.ToString("C2");
             VeryficationWins();
+            start_game_button.Enabled = false;
+            again_button.Visible = true;
+            quit_game_button.Visible = true;
         }
 
         private void VeryficationWins()
@@ -121,7 +124,7 @@ namespace lotto
             }
             if (hitTheNumbers < 3)
             {
-                MessageBox.Show("Sorry not this time. You haven't hit enough numbers.", "Winner Information", MessageBoxButtons.OK,
+                MessageBox.Show("Sorry not this time. You haven't hit enough numbers.", "Winner", MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
             }
             else
@@ -157,12 +160,52 @@ namespace lotto
 
         private void quit_game_button_Click(object sender, EventArgs e)
         {
-            //to-do
+            Close();
         }
 
         private void again_button_Click(object sender, EventArgs e)
         {
-            //to-do
+            if (select.startGameSelectionNumbers)
+            {
+                if (MessageBox.Show("Do you want select new numbers", "New numbers", MessageBoxButtons.YesNo, MessageBoxIcon.Question) ==
+               DialogResult.Yes)
+                {
+                    
+                }
+                else
+                {
+                    ResetGameRandomNumbers();
+                }
+            }
+            else
+            {
+                if (MessageBox.Show("Do you want to draw new numbers", "New numbers", MessageBoxButtons.YesNo, MessageBoxIcon.Question) ==
+               DialogResult.Yes)
+                {
+                    generateRandomNumbersToList.Clear();
+                    GenerateRandomNumbers();
+                    ResetGameRandomNumbers();
+                }
+                else
+                {
+                    ResetGameRandomNumbers();
+                }
+            }
+        }
+
+        private void ResetGameRandomNumbers()
+        {
+            hitTheNumbers = 0;
+            quit_game_button.Visible = false;
+            again_button.Visible = false;
+            drawn_numbers_1.Text = 0.ToString();
+            drawn_numbers_2.Text = 0.ToString();
+            drawn_numbers_3.Text = 0.ToString();
+            drawn_numbers_4.Text = 0.ToString();
+            drawn_numbers_5.Text = 0.ToString();
+            drawn_numbers_6.Text = 0.ToString();
+            generateDrawnNumbersToList.Clear();
+            start_game_button.Enabled = true;
         }
 
         private void LottoDashboard_FormClosing(object sender, FormClosingEventArgs e)

@@ -18,11 +18,11 @@ namespace lotto
                 if (menuLotto.openWindowWhenClickSelectInMenu)
                 {
                     Application.Run(menuLotto.dashboardPanel.select);
-                    closeSimulator = true;
                     if (menuLotto.dashboardPanel.select.backToMenu == false)
                     {
                         Application.Run(menuLotto.dashboardPanel);
                     }
+                    closeSimulator = true;
                 }
                 else if (menuLotto.openWindowWhenClickRandomInMenu)
                 {

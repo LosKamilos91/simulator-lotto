@@ -53,7 +53,7 @@ namespace lotto
                 if (StartGameMessage() == DialogResult.Yes)
                 {
                     startGameSelectionNumbers = true;
-                    Dispose();
+                    //Dispose();
                 }
             }
             else
