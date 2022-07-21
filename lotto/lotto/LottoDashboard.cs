@@ -17,6 +17,7 @@ namespace lotto
         private List<int> generateDrawnNumbersToList = new List<int>();
 
         private decimal totalCash = 50;
+        private int totalDrawns = 0;
         private const long minimumJackpot = 1000000;
         private const long maximumJackpot = 37500000;
         private decimal jackpot;
@@ -82,9 +83,17 @@ namespace lotto
             drawn_numbers_6.Text = generateDrawnNumbersToList[5].ToString();
         }
         #endregion
-        private void LottoDashboard_Shown(object sender, EventArgs e)
+        private void StartDrawnLotto()
         {
             GenerateDrawnNumbers();
+            totalDrawns += 1;
+            total_drawns.Text = totalDrawns.ToString();
+            totalCash -= 3;
+            total_cash.Text = totalCash.ToString("C2");
+        }
+
+        private void LottoDashboard_Shown(object sender, EventArgs e)
+        {
             GenerateJackpot();
             total_cash.Text = totalCash.ToString("C2");
             if (select.startGameSelectionNumbers)
@@ -104,7 +113,7 @@ namespace lotto
 
         private void start_game_button_Click(object sender, EventArgs e)
         {
-            //to-do
+            StartDrawnLotto();
         }
 
         private void quit_game_button_Click(object sender, EventArgs e)
