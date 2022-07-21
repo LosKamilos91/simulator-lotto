@@ -8,28 +8,26 @@ namespace lotto
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             
-            bool close = true;
-            while (close)
+            bool closeSimulator = true;
+            while (closeSimulator)
             {
                 Lotto menuLotto = new Lotto();
                 Application.Run(menuLotto);
                 if (menuLotto.openWindowWhenClickSelectInMenu)
                 {
                     Application.Run(menuLotto.dashboardPanel.select);
-                    close = true;
+                    closeSimulator = true;
                 }
                 else if (menuLotto.openWindowWhenClickRandomInMenu)
                 {
                     Application.Run(menuLotto.dashboardPanel);
-                    close = true;
+                    closeSimulator = true;
                 }
                 else
                 {
-                    close = false;
+                    closeSimulator = false;
                 }
             }
 

@@ -17,10 +17,14 @@ namespace lotto
             InitializeComponent();
         }
 
+        protected DialogResult CloseWindow()
+        {
+            return MessageBox.Show("Do you want close the window?", "Close Window", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+        }
+
         private void back_button_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Do you want close the window?", "Close Window", MessageBoxButtons.YesNo, MessageBoxIcon.Question) ==
-               DialogResult.Yes)
+            if (CloseWindow() == DialogResult.Yes)
             {
                 Dispose();
             }
