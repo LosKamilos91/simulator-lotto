@@ -13,7 +13,8 @@ namespace lotto
     {
         private int countNumber = 0;
         private int maximumNumberCount = 6;
-        protected List<int> numbersSelected = new List<int>();
+        public bool startGameSelectionNumbers = false;
+        public List<int> numbersSelected = new List<int>();
         public SelectionNumbers()
         {
             InitializeComponent();
@@ -49,6 +50,7 @@ namespace lotto
             {
                 if (StartGameMessage() == DialogResult.Yes)
                 {
+                    startGameSelectionNumbers = true;
                     Dispose();
                 }
             }

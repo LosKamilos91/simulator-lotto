@@ -13,6 +13,7 @@ namespace lotto
     public partial class LottoDashboard : Form
     {
         public SelectionNumbers select = new SelectionNumbers();
+        private List<int> generateRandomNumberToList = new List<int>();
 
         //Jackpot
         private const long minimumJackpot = 1000000;
@@ -21,7 +22,6 @@ namespace lotto
         public LottoDashboard()
         {
             InitializeComponent();
-            GenerateJackpot();
         }
 
         private decimal GenerateJackpot()
@@ -31,6 +31,48 @@ namespace lotto
             jackpot_money.Text = totalJackpot;
             bool correctJackpot = decimal.TryParse(totalJackpot, out jackpot);
             return jackpot;
+        }
+
+        private void GenerateRandomNumbers()
+        {
+            Random randomNumbers = new Random();
+            while (generateRandomNumberToList.Count != 6)
+            {
+                int number = randomNumbers.Next(1, 49);
+                if (generateRandomNumberToList.Contains(number))
+                {
+                    continue;
+                }
+                else
+                {
+                    generateRandomNumberToList.Add(number);
+                }
+            }
+            number_1.Text = generateRandomNumberToList[0].ToString();
+            number_2.Text = generateRandomNumberToList[1].ToString();
+            number_3.Text = generateRandomNumberToList[2].ToString();
+            number_4.Text = generateRandomNumberToList[3].ToString();
+            number_5.Text = generateRandomNumberToList[4].ToString();
+            number_6.Text = generateRandomNumberToList[5].ToString();
+        }
+
+        private void LottoDashboard_Shown(object sender, EventArgs e)
+        {
+            if (select.startGameSelectionNumbers)
+            {
+                GenerateJackpot();
+                number_1.Text = select.numbersSelected[0].ToString();
+                number_2.Text = select.numbersSelected[1].ToString();
+                number_3.Text = select.numbersSelected[2].ToString();
+                number_4.Text = select.numbersSelected[3].ToString();
+                number_5.Text = select.numbersSelected[4].ToString();
+                number_6.Text = select.numbersSelected[5].ToString();
+            }
+            else
+            {
+                GenerateRandomNumbers();
+                GenerateJackpot();
+            }
         }
 
         private void start_game_button_Click(object sender, EventArgs e)
