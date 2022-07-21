@@ -13,9 +13,24 @@ namespace lotto
     public partial class LottoDashboard : Form
     {
         public SelectionNumbers select = new SelectionNumbers();
+
+        //Jackpot
+        private const long minimumJackpot = 1000000;
+        private const long maximumJackpot = 37500000;
+        private decimal jackpot;
         public LottoDashboard()
         {
             InitializeComponent();
+            GenerateJackpot();
+        }
+
+        private decimal GenerateJackpot()
+        {
+            Random randomMoney = new Random();
+            string totalJackpot = randomMoney.NextInt64(minimumJackpot, maximumJackpot).ToString("C2");
+            jackpot_money.Text = totalJackpot;
+            bool correctJackpot = decimal.TryParse(totalJackpot, out jackpot);
+            return jackpot;
         }
 
         private void start_game_button_Click(object sender, EventArgs e)
