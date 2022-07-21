@@ -35,8 +35,7 @@ namespace lotto
 
         private void LottoDashboard_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("Do you want close the window?", "Close Window", MessageBoxButtons.YesNo, MessageBoxIcon.Question) ==
-                DialogResult.No)
+            if (select.CloseWindowMessage() == DialogResult.No)
             {
                 e.Cancel = true;
             }

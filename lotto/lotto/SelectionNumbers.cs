@@ -19,17 +19,17 @@ namespace lotto
             InitializeComponent();
         }
         #region Messages
-        protected DialogResult CloseWindowMessage()
+        public DialogResult CloseWindowMessage()
         {
             return MessageBox.Show("Do you want close the window?", "Close Control", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
         }
 
-        protected DialogResult StartGameMessage()
+        public DialogResult StartGameMessage()
         {
             return MessageBox.Show("Are you sure you want to start a game?", "Start Game", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
         }
 
-        private DialogResult MessageErrorMaximumNumbersSelected()
+        public DialogResult MessageErrorMaximumNumbersSelected()
         {
             return MessageBox.Show("You have selected the maximum number of digits", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
