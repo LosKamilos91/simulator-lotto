@@ -58,44 +58,51 @@
             // total_cash
             // 
             this.total_cash.AutoSize = true;
+            this.total_cash.BackColor = System.Drawing.Color.White;
             this.total_cash.Font = new System.Drawing.Font("Arial Nova Cond", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.total_cash.Location = new System.Drawing.Point(157, 9);
+            this.total_cash.Location = new System.Drawing.Point(12, 9);
+            this.total_cash.MaximumSize = new System.Drawing.Size(200, 26);
+            this.total_cash.MinimumSize = new System.Drawing.Size(200, 26);
             this.total_cash.Name = "total_cash";
-            this.total_cash.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.total_cash.Size = new System.Drawing.Size(53, 26);
+            this.total_cash.Padding = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.total_cash.Size = new System.Drawing.Size(200, 26);
             this.total_cash.TabIndex = 29;
             this.total_cash.Text = "0";
+            this.total_cash.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // total_cash_text
             // 
             this.total_cash_text.AutoSize = true;
             this.total_cash_text.Font = new System.Drawing.Font("Arial Nova Cond", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.total_cash_text.Location = new System.Drawing.Point(157, 37);
+            this.total_cash_text.Location = new System.Drawing.Point(96, 34);
             this.total_cash_text.Name = "total_cash_text";
-            this.total_cash_text.Size = new System.Drawing.Size(53, 14);
+            this.total_cash_text.Size = new System.Drawing.Size(32, 14);
             this.total_cash_text.TabIndex = 28;
-            this.total_cash_text.Text = "Total Cash";
+            this.total_cash_text.Text = "CASH";
             // 
             // total_wins_count
             // 
             this.total_wins_count.AutoSize = true;
             this.total_wins_count.Font = new System.Drawing.Font("Arial Nova Cond", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.total_wins_count.Location = new System.Drawing.Point(376, 9);
+            this.total_wins_count.Location = new System.Drawing.Point(372, 9);
+            this.total_wins_count.MaximumSize = new System.Drawing.Size(200, 26);
+            this.total_wins_count.MinimumSize = new System.Drawing.Size(200, 26);
             this.total_wins_count.Name = "total_wins_count";
-            this.total_wins_count.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.total_wins_count.Size = new System.Drawing.Size(53, 26);
+            this.total_wins_count.Padding = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.total_wins_count.Size = new System.Drawing.Size(200, 26);
             this.total_wins_count.TabIndex = 27;
             this.total_wins_count.Text = "0";
+            this.total_wins_count.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // total_wins_text
             // 
             this.total_wins_text.AutoSize = true;
             this.total_wins_text.Font = new System.Drawing.Font("Arial Nova Cond", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.total_wins_text.Location = new System.Drawing.Point(376, 35);
+            this.total_wins_text.Location = new System.Drawing.Point(436, 34);
             this.total_wins_text.Name = "total_wins_text";
-            this.total_wins_text.Size = new System.Drawing.Size(53, 14);
+            this.total_wins_text.Size = new System.Drawing.Size(65, 14);
             this.total_wins_text.TabIndex = 26;
-            this.total_wins_text.Text = "Total Wins";
+            this.total_wins_text.Text = "TOTAL WINS";
             // 
             // jackpot_money
             // 
@@ -384,23 +391,27 @@
             // total_drawns
             // 
             this.total_drawns.AutoSize = true;
+            this.total_drawns.BackColor = System.Drawing.Color.White;
             this.total_drawns.Font = new System.Drawing.Font("Arial Nova Cond", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.total_drawns.Location = new System.Drawing.Point(266, 9);
+            this.total_drawns.Location = new System.Drawing.Point(267, 8);
+            this.total_drawns.MaximumSize = new System.Drawing.Size(60, 26);
+            this.total_drawns.MinimumSize = new System.Drawing.Size(60, 26);
             this.total_drawns.Name = "total_drawns";
-            this.total_drawns.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.total_drawns.Size = new System.Drawing.Size(63, 26);
+            this.total_drawns.Padding = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.total_drawns.Size = new System.Drawing.Size(60, 26);
             this.total_drawns.TabIndex = 50;
             this.total_drawns.Text = "0";
+            this.total_drawns.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // total_drawns_text
             // 
             this.total_drawns_text.AutoSize = true;
             this.total_drawns_text.Font = new System.Drawing.Font("Arial Nova Cond", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.total_drawns_text.Location = new System.Drawing.Point(264, 35);
+            this.total_drawns_text.Location = new System.Drawing.Point(256, 33);
             this.total_drawns_text.Name = "total_drawns_text";
-            this.total_drawns_text.Size = new System.Drawing.Size(65, 14);
+            this.total_drawns_text.Size = new System.Drawing.Size(81, 14);
             this.total_drawns_text.TabIndex = 49;
-            this.total_drawns_text.Text = "Total Drawns";
+            this.total_drawns_text.Text = "TOTAL DRAWNS";
             // 
             // LottoDashboard
             // 
