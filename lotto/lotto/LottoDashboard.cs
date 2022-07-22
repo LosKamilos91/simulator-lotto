@@ -170,7 +170,19 @@ namespace lotto
                 if (MessageBox.Show("Do you want select new numbers", "New numbers", MessageBoxButtons.YesNo, MessageBoxIcon.Question) ==
                DialogResult.Yes)
                 {
-                    
+                    select.numbersSelected.Clear();
+                    select = new SelectionNumbers();
+                    select.ShowDialog();
+                    number_1.Text = select.numbersSelected[0].ToString();
+                    number_2.Text = select.numbersSelected[1].ToString();
+                    number_3.Text = select.numbersSelected[2].ToString();
+                    number_4.Text = select.numbersSelected[3].ToString();
+                    number_5.Text = select.numbersSelected[4].ToString();
+                    number_6.Text = select.numbersSelected[5].ToString();
+                    hitTheNumbers = 0;
+                    quit_game_button.Visible = false;
+                    again_button.Visible = false;
+                    start_game_button.Enabled = true;
                 }
                 else
                 {
