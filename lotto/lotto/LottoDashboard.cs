@@ -29,13 +29,12 @@ namespace lotto
             InitializeComponent();
         }
         #region jackpot
-        private decimal GenerateJackpot()
+        private string GenerateJackpot()
         {
             Random randomMoney = new Random();
-            string totalJackpot = randomMoney.NextInt64(minimumJackpot, maximumJackpot).ToString("C2");
-            jackpot_money.Text = totalJackpot;
+            string totalJackpot = randomMoney.NextInt64(minimumJackpot, maximumJackpot).ToString();
             bool correctJackpot = decimal.TryParse(totalJackpot, out jackpot);
-            return jackpot;
+            return jackpot.ToString("C2");
         }
         #endregion
         #region generate numbers
@@ -64,19 +63,26 @@ namespace lotto
 
         private void GenerateDrawnNumbers()
         {
-            Random drawnNumbers = new Random();
-            while (generateDrawnNumbersToList.Count != 6)
-            {
-                int number = drawnNumbers.Next(1, 49);
-                if (generateDrawnNumbersToList.Contains(number))
-                {
-                    continue;
-                }
-                else
-                {
-                    generateDrawnNumbersToList.Add(number);
-                }
-            }
+            //Random drawnNumbers = new Random();
+            //while (generateDrawnNumbersToList.Count != 6)
+            //{
+            //    int number = drawnNumbers.Next(1, 49);
+            //    if (generateDrawnNumbersToList.Contains(number))
+            //    {
+            //        continue;
+            //    }
+            //    else
+            //    {
+            //        generateDrawnNumbersToList.Add(number);
+            //    }
+            //}
+            generateDrawnNumbersToList.Add(5);
+            generateDrawnNumbersToList.Add(15);
+            generateDrawnNumbersToList.Add(25);
+            generateDrawnNumbersToList.Add(35);
+            generateDrawnNumbersToList.Add(1);
+            generateDrawnNumbersToList.Add(7);
+
             drawn_numbers_1.Text = generateDrawnNumbersToList[0].ToString();
             drawn_numbers_2.Text = generateDrawnNumbersToList[1].ToString();
             drawn_numbers_3.Text = generateDrawnNumbersToList[2].ToString();
@@ -122,21 +128,50 @@ namespace lotto
                     }
                 }
             }
+            WinnersMoneyCalculation();
+        }
+        private DialogResult WinnerMessage(decimal money)
+        {
+            return MessageBox.Show($"Hit numbers: {hitTheNumbers} numbers, your winners is {money.ToString("C2")}", "Winner",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private decimal Win()
+        {
+            decimal calc = (6 + totalDrawns) * hitTheNumbers;
+            return jackpot / calc;
+        }
+
+        private void WinnersMoneyCalculation()
+        {
+            //decimal calc = (6 + totalDrawns) * hitTheNumbers;
             if (hitTheNumbers < 3)
             {
                 MessageBox.Show("Sorry not this time. You haven't hit enough numbers.", "Winner", MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
             }
+            else if (hitTheNumbers == 3)
+            {
+                WinnerMessage(Win());
+            }
+            else if (hitTheNumbers == 4)
+            {
+                WinnerMessage(Win());
+            }
+            else if (hitTheNumbers == 5)
+            {
+                WinnerMessage(Win());
+            }
             else
             {
-                MessageBox.Show($"Hit numbers: {hitTheNumbers} numbers, your winners is ...", "Winner",
+                MessageBox.Show($"Congratilation you hit the: {hitTheNumbers} numbers, you wan a jackpot {jackpot}", "Winner",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
         private void LottoDashboard_Shown(object sender, EventArgs e)
         {
-            GenerateJackpot();
+            jackpot_money.Text = GenerateJackpot();
             total_cash.Text = totalCash.ToString("C2");
             if (select.startGameSelectionNumbers)
             {
@@ -183,10 +218,12 @@ namespace lotto
                     quit_game_button.Visible = false;
                     again_button.Visible = false;
                     start_game_button.Enabled = true;
+                    GenerateJackpot();
                 }
                 else
                 {
                     ResetGameRandomNumbers();
+                    GenerateJackpot();
                 }
             }
             else
@@ -197,10 +234,12 @@ namespace lotto
                     generateRandomNumbersToList.Clear();
                     GenerateRandomNumbers();
                     ResetGameRandomNumbers();
+                    GenerateJackpot();
                 }
                 else
                 {
                     ResetGameRandomNumbers();
+                    GenerateJackpot();
                 }
             }
         }
