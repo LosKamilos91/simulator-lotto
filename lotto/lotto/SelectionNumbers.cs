@@ -23,7 +23,7 @@ namespace lotto
         public bool startGameSelectionNumbers = false;
         public bool backToMenu = false;
         
-        #region Messages
+        #region Messages Functions
         public DialogResult CloseWindowMessage()
         {
             return MessageBox.Show("Do you want close the window?", "Close Window", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -37,32 +37,6 @@ namespace lotto
             return MessageBox.Show("You have selected the maximum number of digits", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
         #endregion
-
-        private void back_button_Click(object sender, EventArgs e)
-        {
-            if (CloseWindowMessage() == DialogResult.Yes)
-            {
-                backToMenu = true;
-                Dispose();
-            }
-        }
-        private void start_button_Click(object sender, EventArgs e)
-        {
-            if (number_count.Text == 6.ToString())
-            {
-                if (StartGameMessage() == DialogResult.Yes)
-                {
-                    startGameSelectionNumbers = true;
-                    Dispose();
-                }
-            }
-            else
-            {
-                MessageBox.Show($"The game cannot be started because 6 numbers have not been selected.",
-                    "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
-
         /// <summary>
         /// Function supporting clicked buttons with the addition of a number to the list.
         /// </summary>
@@ -95,6 +69,30 @@ namespace lotto
                 MessageErrorMaximumNumbersSelected();
             }
 
+        }
+        private void back_button_Click(object sender, EventArgs e)
+        {
+            if (CloseWindowMessage() == DialogResult.Yes)
+            {
+                backToMenu = true;
+                Dispose();
+            }
+        }
+        private void start_button_Click(object sender, EventArgs e)
+        {
+            if (number_count.Text == 6.ToString())
+            {
+                if (StartGameMessage() == DialogResult.Yes)
+                {
+                    startGameSelectionNumbers = true;
+                    Dispose();
+                }
+            }
+            else
+            {
+                MessageBox.Show($"The game cannot be started because 6 numbers have not been selected.",
+                    "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
         private void number_1_Click(object sender, EventArgs e)
         {
