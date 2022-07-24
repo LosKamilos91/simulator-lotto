@@ -22,7 +22,7 @@ namespace lotto
         private List<int> randomNumbersPlayer = new List<int>();
         private List<int> drawingNumbers = new List<int>();
 
-        private decimal totalCash = 10;  //wrócić do 50
+        private decimal totalCash = 50;
         private int totalDraws = 0;
         private int totalWins = 0;
         private const int betCash = 3;
