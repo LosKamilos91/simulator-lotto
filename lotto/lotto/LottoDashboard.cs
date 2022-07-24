@@ -24,7 +24,7 @@ namespace lotto
 
         private decimal totalCash = 50;
         private int totalDraws = 0;
-        private int totalWins = 0;   //doda po wygranej
+        private int totalWins = 0;
         private const int betCash = 3;
         private int hitTheNumbers = 0;
         private const long minimumJackpot = 1000000;

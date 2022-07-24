@@ -369,7 +369,7 @@
             this.start_game_button.Name = "start_game_button";
             this.start_game_button.Size = new System.Drawing.Size(193, 37);
             this.start_game_button.TabIndex = 47;
-            this.start_game_button.Text = "Start Game";
+            this.start_game_button.Text = "Start Draw";
             this.start_game_button.UseVisualStyleBackColor = false;
             this.start_game_button.Click += new System.EventHandler(this.start_game_button_Click);
             // 
