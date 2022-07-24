@@ -22,7 +22,7 @@ namespace lotto
         private List<int> randomNumbersPlayer = new List<int>();
         private List<int> drawingNumbers = new List<int>();
 
-        private decimal totalCash = 5;  //zmienić spowrotem na 50
+        private decimal totalCash = 10;  //wrócić do 50
         private int totalDraws = 0;
         private int totalWins = 0;
         private const int betCash = 3;
@@ -153,14 +153,14 @@ namespace lotto
             if(hitTheNumbers >=3 && 5 >= hitTheNumbers)
             {
                 totalCash += CalculationOfWinnings();
-                total_cash.Text = totalCash.ToString();
+                total_cash.Text = totalCash.ToString("C2");
                 totalWins += 1;
                 total_wins_count.Text = totalWins.ToString();
             }
             if (hitTheNumbers == 6)
             {
                 totalCash += jackpot;
-                total_cash.Text = totalCash.ToString();
+                total_cash.Text = totalCash.ToString("C2");
                 totalWins += 1;
                 total_wins_count.Text = totalWins.ToString();
             }
@@ -183,7 +183,7 @@ namespace lotto
                 GenerateRandomNambersForPlayes();
             }
         }
-        private void ResetRandomNumbers()
+        private void RestartRandomNumbers()
         {
             jackpot_money.Text = GenerateJackpot();
             drawn_numbers_1.Text = 0.ToString();
@@ -198,6 +198,23 @@ namespace lotto
             again_button.Visible = false;
             start_game_button.Enabled = true;
         }
+        private void RestartSelectedNumbers()
+        {
+            select.numbersSelected.Clear();
+            select = new SelectionNumbers();
+            select.ShowDialog();
+            number_1.Text = select.numbersSelected[0].ToString();
+            number_2.Text = select.numbersSelected[1].ToString();
+            number_3.Text = select.numbersSelected[2].ToString();
+            number_4.Text = select.numbersSelected[3].ToString();
+            number_5.Text = select.numbersSelected[4].ToString();
+            number_6.Text = select.numbersSelected[5].ToString();
+            hitTheNumbers = 0;
+            quit_game_button.Visible = false;
+            again_button.Visible = false;
+            start_game_button.Enabled = true;
+            jackpot_money.Text = GenerateJackpot();
+        }
         private void again_button_Click(object sender, EventArgs e)
         {
             if (select.startGameSelectionNumbers)
@@ -205,24 +222,11 @@ namespace lotto
                 if (MessageBox.Show("Do you want select new numbers", "New numbers", MessageBoxButtons.YesNo, MessageBoxIcon.Question) ==
                DialogResult.Yes)
                 {
-                    select.numbersSelected.Clear();
-                    select = new SelectionNumbers();
-                    select.ShowDialog();
-                    number_1.Text = select.numbersSelected[0].ToString();
-                    number_2.Text = select.numbersSelected[1].ToString();
-                    number_3.Text = select.numbersSelected[2].ToString();
-                    number_4.Text = select.numbersSelected[3].ToString();
-                    number_5.Text = select.numbersSelected[4].ToString();
-                    number_6.Text = select.numbersSelected[5].ToString();
-                    hitTheNumbers = 0;
-                    quit_game_button.Visible = false;
-                    again_button.Visible = false;
-                    start_game_button.Enabled = true;
-                    jackpot_money.Text = GenerateJackpot();
+                    RestartSelectedNumbers();
                 }
                 else
                 {
-                    ResetRandomNumbers();
+                    RestartRandomNumbers();
                 }
             }
             else
@@ -232,11 +236,11 @@ namespace lotto
                 {
                     randomNumbersPlayer.Clear();
                     GenerateRandomNambersForPlayes();
-                    ResetRandomNumbers();
+                    RestartRandomNumbers();
                 }
                 else
                 {
-                    ResetRandomNumbers();
+                    RestartRandomNumbers();
                 }
             }
         }
@@ -254,14 +258,18 @@ namespace lotto
                     total_draws.Text = totalDraws.ToString();
                     totalWins = 0;
                     total_wins_count.Text = totalWins.ToString();
-                    if (select.startGameSelectionNumbers)
+                    if (select.startGameSelectionNumbers)       //czy wybrać nowe numery po restarcie
                     {
-                        //komunikat czy dać nowe numery do wyboru
+                        if (MessageBox.Show("Do you want selected new numbers", "Selected Numbers", MessageBoxButtons.YesNo, MessageBoxIcon.Question) ==
+                    DialogResult.Yes)
+                        {
+                            RestartSelectedNumbers();
+                        }
                     }
                     else
                     {
                         GenerateRandomNambersForPlayes();
-                        ResetRandomNumbers();
+                        RestartRandomNumbers();
                     }
                 }
                 else
