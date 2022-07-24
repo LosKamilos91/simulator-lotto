@@ -22,7 +22,7 @@ namespace lotto
         private List<int> randomNumbersPlayer = new List<int>();
         private List<int> drawingNumbers = new List<int>();
 
-        private decimal totalCash = 5;
+        private decimal totalCash = 50;
         private int totalDraws = 0;
         private int totalWins = 0;   //doda po wygranej
         private const int betCash = 3;
@@ -252,6 +252,8 @@ namespace lotto
                     total_cash.Text = totalCash.ToString("C2");
                     totalDraws = 0;
                     total_draws.Text = totalDraws.ToString();
+                    totalWins = 0;
+                    total_wins_count.Text = totalWins.ToString();
                     if (select.startGameSelectionNumbers)
                     {
                         //komunikat czy dać nowe numery do wyboru
