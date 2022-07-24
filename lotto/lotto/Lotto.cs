@@ -10,6 +10,11 @@ namespace lotto
             InitializeComponent();
         }
 
+        private DialogResult StartGameMessage()
+        {
+            return MessageBox.Show("Do you want start the game?", "Start Game", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+        }
+
         private void select_button_menu_Click(object sender, EventArgs e)
         {
             if (StartGameMessage() == DialogResult.Yes)
@@ -70,20 +75,11 @@ namespace lotto
 
         private void Lotto_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (CloseGameMessage() == DialogResult.No)
+            if (MessageBox.Show("Do you want quit the game?", "Exit game", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == 
+                DialogResult.No)
             {
                 e.Cancel = true;
             }
-        }
-
-        private DialogResult CloseGameMessage()
-        {
-            return MessageBox.Show("Do you want quit the game?", "Exit game", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-        }
-
-        private DialogResult StartGameMessage()
-        {
-            return MessageBox.Show("Do you want start game?", "Start Game", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
         }
     }
 }

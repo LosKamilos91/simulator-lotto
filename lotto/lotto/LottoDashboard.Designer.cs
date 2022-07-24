@@ -52,8 +52,8 @@
             this.again_button = new System.Windows.Forms.Button();
             this.start_game_button = new System.Windows.Forms.Button();
             this.quit_game_button = new System.Windows.Forms.Button();
-            this.total_drawns = new System.Windows.Forms.Label();
-            this.total_drawns_text = new System.Windows.Forms.Label();
+            this.total_draws = new System.Windows.Forms.Label();
+            this.total_draws_text = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // total_cash
@@ -389,30 +389,30 @@
             this.quit_game_button.Visible = false;
             this.quit_game_button.Click += new System.EventHandler(this.quit_game_button_Click);
             // 
-            // total_drawns
+            // total_draws
             // 
-            this.total_drawns.AutoSize = true;
-            this.total_drawns.BackColor = System.Drawing.Color.White;
-            this.total_drawns.Font = new System.Drawing.Font("Arial Nova Cond", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.total_drawns.Location = new System.Drawing.Point(267, 8);
-            this.total_drawns.MaximumSize = new System.Drawing.Size(60, 26);
-            this.total_drawns.MinimumSize = new System.Drawing.Size(60, 26);
-            this.total_drawns.Name = "total_drawns";
-            this.total_drawns.Padding = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.total_drawns.Size = new System.Drawing.Size(60, 26);
-            this.total_drawns.TabIndex = 50;
-            this.total_drawns.Text = "0";
-            this.total_drawns.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.total_draws.AutoSize = true;
+            this.total_draws.BackColor = System.Drawing.Color.White;
+            this.total_draws.Font = new System.Drawing.Font("Arial Nova Cond", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.total_draws.Location = new System.Drawing.Point(267, 8);
+            this.total_draws.MaximumSize = new System.Drawing.Size(60, 26);
+            this.total_draws.MinimumSize = new System.Drawing.Size(60, 26);
+            this.total_draws.Name = "total_draws";
+            this.total_draws.Padding = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.total_draws.Size = new System.Drawing.Size(60, 26);
+            this.total_draws.TabIndex = 50;
+            this.total_draws.Text = "0";
+            this.total_draws.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // total_drawns_text
+            // total_draws_text
             // 
-            this.total_drawns_text.AutoSize = true;
-            this.total_drawns_text.Font = new System.Drawing.Font("Arial Nova Cond", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.total_drawns_text.Location = new System.Drawing.Point(256, 33);
-            this.total_drawns_text.Name = "total_drawns_text";
-            this.total_drawns_text.Size = new System.Drawing.Size(81, 14);
-            this.total_drawns_text.TabIndex = 49;
-            this.total_drawns_text.Text = "TOTAL DRAWNS";
+            this.total_draws_text.AutoSize = true;
+            this.total_draws_text.Font = new System.Drawing.Font("Arial Nova Cond", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.total_draws_text.Location = new System.Drawing.Point(256, 33);
+            this.total_draws_text.Name = "total_draws_text";
+            this.total_draws_text.Size = new System.Drawing.Size(74, 14);
+            this.total_draws_text.TabIndex = 49;
+            this.total_draws_text.Text = "TOTAL DRAWS";
             // 
             // LottoDashboard
             // 
@@ -420,8 +420,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(584, 311);
-            this.Controls.Add(this.total_drawns);
-            this.Controls.Add(this.total_drawns_text);
+            this.Controls.Add(this.total_draws);
+            this.Controls.Add(this.total_draws_text);
             this.Controls.Add(this.again_button);
             this.Controls.Add(this.start_game_button);
             this.Controls.Add(this.quit_game_button);
@@ -484,7 +484,7 @@
         private Button again_button;
         private Button start_game_button;
         private Button quit_game_button;
-        private Label total_drawns;
-        private Label total_drawns_text;
+        private Label total_draws;
+        private Label total_draws_text;
     }
 }
