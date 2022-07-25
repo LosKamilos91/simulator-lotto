@@ -76,6 +76,7 @@ namespace lotto
                     drawingNumbers.Add(number);
                 }
             }
+
             drawn_numbers_1.Text = drawingNumbers[0].ToString();
             drawn_numbers_2.Text = drawingNumbers[1].ToString();
             drawn_numbers_3.Text = drawingNumbers[2].ToString();
@@ -143,7 +144,7 @@ namespace lotto
             }
             else
             {
-                MessageBox.Show($"Congratilation you hit the: {hitTheNumbers} numbers, you wan a jackpot {jackpot}", "Winner",
+                MessageBox.Show($"Congratilation you hit the: {hitTheNumbers} numbers, you wan a jackpot {jackpot:C2}", "Winner",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
                 VictoryStatistics();
             }
@@ -258,7 +259,7 @@ namespace lotto
                     total_draws.Text = totalDraws.ToString();
                     totalWins = 0;
                     total_wins_count.Text = totalWins.ToString();
-                    if (select.startGameSelectionNumbers)       //czy wybrać nowe numery po restarcie
+                    if (select.startGameSelectionNumbers)
                     {
                         if (MessageBox.Show("Do you want selected new numbers", "Selected Numbers", MessageBoxButtons.YesNo, MessageBoxIcon.Question) ==
                     DialogResult.Yes)
@@ -301,5 +302,9 @@ namespace lotto
                 e.Cancel = true;
             }
         }
+
+        //to-do
+        //dodać zapisywanie oraz wczytywanie 
+        //dodać total jackpot
     }
 }
