@@ -8,18 +8,10 @@
 ![last_commit](https://img.shields.io/github/last-commit/LosKamilos91/simulator-lotto?color=%23ff6500&style=flat-square)
 
 > Description
-> 
-A simple Windows Forms application in which we can play a simulation of a lotto draw. There are two modes in the game - a game with the possibility of selecting 6 numbers and a game with a random number draw. You can win virtual money if you hit a minimum of 3 numbers. Calculation system was created by me. 
 
-##### Winnings calculation system
+A simple **Windows Forms** application in which we can play a simulation of a lotto draw. There are two modes in the game - a game with the possibility of selecting 6 numbers and a game with a random number draw. You can win virtual money if you hit a minimum of 3 numbers. Calculation system was created by me. 
 
-**jackpot / ((6 + totalDraws) * hitTheNumber)**
-
-
-##### Version: 
-0.1.0
-
-Soon
+Winnings calculation system: **jackpot / ((6 + totalDraws) * hitTheNumber)**
 
 > Technologies
 
